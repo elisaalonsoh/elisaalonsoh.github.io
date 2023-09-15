@@ -81,7 +81,7 @@ analytics:
 # Site Author
 author:
   name             : "Elisa Alonso Herrero"
-  avatar           : "./images/profile.jpg"
+  avatar           : "profile.jpg"
   bio              : "Econ pre-doc @ University of Zurich"
   location         : "Zurich, Switzerland"
   employer         :
