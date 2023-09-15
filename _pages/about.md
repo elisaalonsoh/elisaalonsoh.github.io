@@ -8,11 +8,9 @@ redirect_from:
   - /about.html
 ---
 
-I am a pre-doc at the University of Zurich working education, gender, and health economics in the teams of [Ulf Zolizt](https://ulfzoelitz.com/) and [Ana Costa-Ramon](https://sites.google.com/view/anamariacostaramon). I received a dual degree in economics and 
+I am a pre-doc at the University of Zurich working education, gender, and health economics in the teams of [Ulf Zolizt](https://ulfzoelitz.com/) and [Ana Costa-Ramon](https://sites.google.com/view/anamariacostaramon). I received a dual degree in economics and international studies by the University Carlos III of Madrid in 2022.
 
-# Education
-- B.Sc. in Economics, University Carlos III, 2022
-  - Visiting student in the UC Davis taking graduate coursework (2021-2022)
-- B.A in International Studies, University Carlos III, 2022
+I am mainly interested in Public, Development, and Labor economics, with an emphasis on inequality and public policies.
+
 
 Contact: elisa.alonsoh@gmail.com
