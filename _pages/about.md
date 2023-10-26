@@ -13,6 +13,6 @@ I am a pre-doc at the University of Zurich working on education, gender, and hea
 
 I am mainly interested in Public and Labor economics, with an emphasis on applied methods, inequality and public policies.
 
-Here is my [resume](https://elisaalonsoh.github.io/files/resume_Elisa_Alonso_Herero_2023)!
+Here is my [resume](https://elisaalonsoh.github.io/files/resume_Elisa_Alonso_Herero_2023.pdf)!
 
 Contact: [elisa.alonsoh@gmail.com](mailto:elisa.alonsoh@gmail.com)
