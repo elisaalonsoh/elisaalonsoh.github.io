@@ -1,0 +1,43 @@
+name: Build & Validate Site
+
+on:
+  push:
+    branches: [ master ]
+  pull_request:
+    branches: [ master ]
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    strategy:
+      matrix:
+        ruby-version: ['3.1']
+
+    steps:
+    - uses: actions/checkout@v4
+
+    - name: Set up Ruby
+      uses: ruby/setup-ruby@v1
+      with:
+        ruby-version: ${{ matrix.ruby-version }}
+        bundler-cache: true
+
+    - name: Build with Jekyll
+      run: bundle exec jekyll build
+      env:
+        JEKYLL_ENV: production
+
+    - name: Check for broken links (HTML Proofer)
+      run: |
+        gem install html-proofer
+        htmlproofer ./_site --disable-external --ignore-urls "/^\//" --allow-hash-href
+      continue-on-error: true
+
+    - name: Upload build artifacts
+      if: always()
+      uses: actions/upload-artifact@v3
+      with:
+        name: site-build
+        path: _site/
+        retention-days: 5
