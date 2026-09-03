@@ -13,14 +13,14 @@ repos:
     rev: v0.37.0
     hooks:
       - id: markdownlint
-        args: ['--fix']
+        args: ['--config', '.markdownlint.yaml']
 
   - repo: local
     hooks:
       - id: jekyll-build-check
         name: Jekyll build check
-        entry: bash -c 'bundle exec jekyll build --strict_front_matter'
+        entry: bundle exec jekyll build --strict_front_matter
         language: system
         pass_filenames: false
-        stages: [commit]
+        stages: [pre-commit]
         verbose: true

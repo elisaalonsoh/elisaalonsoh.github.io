@@ -10,16 +10,19 @@
 ## Initial Setup
 
 ### 1. Install Ruby Dependencies
+
 ```bash
 bundle install
 ```
 
 ### 2. Install Node Dependencies
+
 ```bash
 npm install
 ```
 
 ### 3. Set Up Pre-commit Hooks (Optional but Recommended)
+
 ```bash
 pip install pre-commit
 pre-commit install
@@ -29,18 +32,22 @@ pre-commit run --all-files  # First run to fix any existing issues
 ## Local Development
 
 ### Build and Serve Locally
+
 ```bash
 bundle exec jekyll serve
 # Site will be available at http://localhost:4000
 ```
 
 ### Watch for CSS/JS Changes
+
 In a separate terminal:
+
 ```bash
 npm run watch
 ```
 
 ### Build Production Assets
+
 ```bash
 npm run build
 bundle exec jekyll build --strict_front_matter
@@ -49,6 +56,7 @@ bundle exec jekyll build --strict_front_matter
 ## Updating Dependencies
 
 ### Update Ruby Gems
+
 ```bash
 bundle update
 ```
@@ -56,6 +64,7 @@ bundle update
 Check for updates monthly and test locally before pushing to main.
 
 ### Update Node Packages
+
 ```bash
 npm update
 npm outdated  # Check for packages that need major version updates
@@ -68,6 +77,7 @@ npm outdated  # Check for packages that need major version updates
 ### Option 1: Switch Remote Gem Themes (Easiest)
 
 1. Update `_config.yml`:
+
 ```yaml
 # Before:
 theme: minimal-mistakes-jekyll
@@ -79,6 +89,7 @@ remote_theme: pages-themes/architect@v0.2.0
 ```
 
 2. Update Gemfile:
+
 ```ruby
 # Before:
 # gem "minimal-mistakes-jekyll"
@@ -90,11 +101,13 @@ remote_theme: pages-themes/architect@v0.2.0
 3. Remove/backup custom `_sass/` and `_layouts/` files if they conflict
 
 4. Test locally:
+
 ```bash
 bundle exec jekyll serve
 ```
 
 **Popular Jekyll Themes Compatible with GitHub Pages:**
+
 - `pages-themes/architect` - Modern, academic-friendly
 - `pages-themes/minimal` - Clean and simple
 - `jekyll-theme-primer` - GitHub's official theme
@@ -104,12 +117,14 @@ bundle exec jekyll serve
 ### Option 2: Fork a Theme Repository (Advanced)
 
 1. Clone a different Jekyll theme:
+
 ```bash
 git clone https://github.com/user/jekyll-theme.git temp-theme
 cd temp-theme
 ```
 
 2. Copy theme files to your repo:
+
 ```bash
 cp -r temp-theme/_layouts .
 cp -r temp-theme/_sass .
@@ -118,11 +133,13 @@ cp -r temp-theme/assets .
 ```
 
 3. Update `_config.yml` to use local theme:
+
 ```yaml
 # Don't specify a theme, Jekyll will use local _layouts and _sass
 ```
 
 4. Test and commit:
+
 ```bash
 bundle exec jekyll serve
 git add .
@@ -181,6 +198,7 @@ pre-commit run --all-files --verbose
 ## Continuous Integration
 
 GitHub Actions automatically:
+
 - ✅ Builds your site on every push
 - ✅ Checks for broken links
 - ✅ Validates Jekyll frontmatter
