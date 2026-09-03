@@ -277,6 +277,7 @@ GEM
       tzinfo (>= 1.0.0)
     unicode-display_width (1.8.0)
     uri (1.1.1)
+    webrick (1.9.2)
 
 PLATFORMS
   x64-mingw-ucrt
@@ -288,6 +289,7 @@ DEPENDENCIES
   jekyll-feed (~> 0.17.0)
   jekyll-sitemap (~> 1.4.0)
   tzinfo-data
+  webrick (~> 1.8)
 
 BUNDLED WITH
    2.4.19

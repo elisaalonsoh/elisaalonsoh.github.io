@@ -12,6 +12,7 @@ source "https://rubygems.org"
 gem "github-pages", "~> 231", group: :jekyll_plugins
 gem "csv", "~> 3.3"
 gem "tzinfo-data"
+gem "webrick", "~> 1.8"
 
 # If you want to use Jekyll native, uncomment the line below.
 # To upgrade, run `bundle update`.
